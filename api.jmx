@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.2 r1790748">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Automation-Settings" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">172.16.225.63</stringProp>
+        <stringProp name="HTTPSampler.port">8003</stringProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">5</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout">120000</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Automation-Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="API_KEY" elementType="Argument">
+            <stringProp name="Argument.name">API_KEY</stringProp>
+            <stringProp name="Argument.value">s3bl25jp728bufn99g8j6el0prtm1cjgc5qpnp2701r2ud2u9s</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ACH_PAYMENTACCOUNT_ID" elementType="Argument">
+            <stringProp name="Argument.name">ACH_PAYMENTACCOUNT_ID</stringProp>
+            <stringProp name="Argument.value">e7TlXLaCvkqzKd1kDr01I8rL!!!jPwMEB@@@c5GDgl6ZgiQMVN2xuQRIVimJL6mbFtmSSdnl0GXE1NE=</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="FEE_SCHEDULE_ID" elementType="Argument">
+            <stringProp name="Argument.name">FEE_SCHEDULE_ID</stringProp>
+            <stringProp name="Argument.value">PBIlfW8jHnGeeofxjKALFQkTJd3igzWJyrr0SJb7pkRRVyOgDxbLQKb4u451Yl3u</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="WEEKLY" elementType="Argument">
+            <stringProp name="Argument.name">WEEKLY</stringProp>
+            <stringProp name="Argument.value">QDGfoL8MVLK8A49qup7O2vW1kILuFE2EqJLLYVjupqeyiA4J9Y3wXP1iWaa7FcQi</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="1AND15" elementType="Argument">
+            <stringProp name="Argument.name">1AND15</stringProp>
+            <stringProp name="Argument.value">P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0YsV9Ft5ABdowaCoXD9gUSLCJIt1rJRMgBH</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MONTHLY" elementType="Argument">
+            <stringProp name="Argument.name">MONTHLY</stringProp>
+            <stringProp name="Argument.value">YH@@@C1gCA5LeFQ52IDytTyubBdYVgqGeE9KPFeY8iuMIVJ@@@Bi4s439smNbQl1FPTa</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="QUARTERLY" elementType="Argument">
+            <stringProp name="Argument.name">QUARTERLY</stringProp>
+            <stringProp name="Argument.value">p30JQBweOKuZceZ18ML46Z8DU6NeQqG90KYep3PjRhce6G8@@@ZKe7ZU8Y2eh5mVg5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SEMIANNUALLY" elementType="Argument">
+            <stringProp name="Argument.name">SEMIANNUALLY</stringProp>
+            <stringProp name="Argument.value">8IbQ47tlirrzpU4yXKon0pNz53euZH9yzFNWZBNOxtu3ae97ZyrJdQNnTWkSynjh</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ANNUALLY" elementType="Argument">
+            <stringProp name="Argument.name">ANNUALLY</stringProp>
+            <stringProp name="Argument.value">KNSKzuLQxogmrEGG4uZJPtGAEHVW3n3fn8Ae3v8C1MBFlXHUfbFeFvn1ZwW3gweI</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AMOUNT" elementType="Argument">
+            <stringProp name="Argument.name">AMOUNT</stringProp>
+            <stringProp name="Argument.value">33</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TOTAL_AMOUNT" elementType="Argument">
+            <stringProp name="Argument.name">TOTAL_AMOUNT</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NO_OF_PAYMENTS" elementType="Argument">
+            <stringProp name="Argument.name">NO_OF_PAYMENTS</stringProp>
+            <stringProp name="Argument.value">ceil(TOTAL_AMOUNT/AMOUNT)</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Automation-Thread" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">stopthread</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1403905983000</longProp>
+        <longProp name="ThreadGroup.end_time">1403905983000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="NO APIKEY HEADER" enabled="false">
+          <stringProp name="TestPlan.comments">NO APIKEY HEADER</stringProp>
+        </GenericController>
+        <hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Enumerations Using &lt;Login&gt;" enabled="false"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST(GET) enumerations" enabled="false">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;Login xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+  &lt;UserName&gt;${USER_NAME}&lt;/UserName&gt;&#xd;
+  &lt;Password&gt;${PASSWORD}&lt;/Password&gt;&#xd;
+&lt;/Login&gt;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/enumerations</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">X-HTTP-Method-Override</stringProp>
+                    <stringProp name="Header.value">GET</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="setup: Processing Accounts Using &lt;Login&gt;" enabled="false"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST(GET) processingaccounts" enabled="false">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;Login xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+  &lt;UserName&gt;${USER_NAME}&lt;/UserName&gt;&#xd;
+  &lt;Password&gt;${PASSWORD}&lt;/Password&gt;&#xd;
+&lt;/Login&gt;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/processingaccounts?name=&apos;dhl&apos;</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">X-HTTP-Method-Override</stringProp>
+                    <stringProp name="Header.value">GET</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">PROCESSING_ACCOUNT_ID</stringProp>
+                <stringProp name="RegexExtractor.regex">id=&quot;([^&quot;]*)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="setup: Enroll" enabled="false"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST enroll" enabled="false">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;EnrollRequest xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+  &lt;UserName&gt;${USER_NAME}&lt;/UserName&gt;&#xd;
+  &lt;Password&gt;${PASSWORD}&lt;/Password&gt;&#xd;
+  &lt;ApiKeyName&gt;${API_KEY_NAME}&lt;/ApiKeyName&gt;&#xd;
+  &lt;ProcessingAccountId&gt;${PROCESSING_ACCOUNT_ID}&lt;/ProcessingAccountId&gt;&#xd;
+&lt;/EnrollRequest&gt;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/enroll</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">API_KEY</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;ApiKey.*?\&gt;(.*)&lt;/ApiKey&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">SESSION_TOKEN</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;SessionToken.*?\&gt;(.*)&lt;/SessionToken&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="WITH APIKEY" enabled="true"/>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Automation-Header" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/vnd.fundtech.t3-v1+xml</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-TT-APIKEY</stringProp>
+                <stringProp name="Header.value">${API_KEY}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-TT-SESSIONTOKEN</stringProp>
+                <stringProp name="Header.value">DEPRICATED</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name"></stringProp>
+                <stringProp name="Header.value"></stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Schedule Payments" enabled="true"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Payment Installment ACH Weekly" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;PaymentSchedule xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+	&lt;PaymentAmount&gt;${AMOUNT}&lt;/PaymentAmount&gt;&#xd;
+	&lt;OriginalAmount&gt;${TOTAL_AMOUNT}&lt;/OriginalAmount&gt;&#xd;
+	&lt;OriginalDueAmount&gt;200&lt;/OriginalDueAmount&gt;&#xd;
+	&lt;FeePerPayment&gt;1&lt;/FeePerPayment&gt;&#xd;
+	&lt;TaxAmountPerPayment&gt;2&lt;/TaxAmountPerPayment&gt;&#xd;
+	&lt;TotalPaymentsToPay&gt;${NO_OF_PAYMENTS}&lt;/TotalPaymentsToPay&gt;&#xd;
+	&lt;PaymentsPaid&gt;1&lt;/PaymentsPaid&gt;&#xd;
+	&lt;StartDate&gt;${NOW}&lt;/StartDate&gt;&#xd;
+	&lt;InvoiceNumber&gt;T5VC5&lt;/InvoiceNumber&gt;&#xd;
+	&lt;PoNumber&gt;MOY49&lt;/PoNumber&gt;&#xd;
+	&lt;CustomDataFields&gt;&lt;/CustomDataFields&gt;&#xd;
+	&lt;ReportNotes&gt;&lt;/ReportNotes&gt;&#xd;
+	&lt;EmailNotes&gt;&lt;/EmailNotes&gt;&#xd;
+	&lt;ExternalId&gt;Token1&lt;/ExternalId&gt;&#xd;
+	&lt;AchPaymentAccount id=&quot;${ACH_PAYMENTACCOUNT_ID}&quot;/&gt;&#xd;
+	&lt;RecurrenceType id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0YsNzkAYBxJF7cOQjFM6pxUlGpvpZpU!!!X7l&quot;/&gt;	&#xd;
+	&lt;FrequencyType id=&quot;${WEEKLY}&quot; /&gt;&#xd;
+	&lt;CreditCardPaymentAccount id=&quot;&quot;/&gt;&#xd;
+	&lt;FeeSchedule id=&quot;${FEE_SCHEDULE_ID}&quot;/&gt;&#xd;
+	&lt;PointOfEntry id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0Ys8z4UUkB6!!!SAwJXGr7p!!!HVal4uYO69Tkv&quot;/&gt;		&#xd;
+&lt;/PaymentSchedule&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/paymentschedule</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Payment Installment ACH 1st and 15th" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;PaymentSchedule xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+	&lt;PaymentAmount&gt;${AMOUNT}&lt;/PaymentAmount&gt;&#xd;
+	&lt;OriginalAmount&gt;${TOTAL_AMOUNT}&lt;/OriginalAmount&gt;&#xd;
+	&lt;OriginalDueAmount&gt;200&lt;/OriginalDueAmount&gt;&#xd;
+	&lt;FeePerPayment&gt;1&lt;/FeePerPayment&gt;&#xd;
+	&lt;TaxAmountPerPayment&gt;2&lt;/TaxAmountPerPayment&gt;&#xd;
+	&lt;TotalPaymentsToPay&gt;3&lt;/TotalPaymentsToPay&gt;&#xd;
+	&lt;PaymentsPaid&gt;1&lt;/PaymentsPaid&gt;&#xd;
+	&lt;StartDate&gt;${NOW}&lt;/StartDate&gt;&#xd;
+	&lt;InvoiceNumber&gt;T5VC5&lt;/InvoiceNumber&gt;&#xd;
+	&lt;PoNumber&gt;MOY49&lt;/PoNumber&gt;&#xd;
+	&lt;CustomDataFields&gt;&lt;/CustomDataFields&gt;&#xd;
+	&lt;ReportNotes&gt;&lt;/ReportNotes&gt;&#xd;
+	&lt;EmailNotes&gt;&lt;/EmailNotes&gt;&#xd;
+	&lt;ExternalId&gt;Token1&lt;/ExternalId&gt;&#xd;
+	&lt;AchPaymentAccount id=&quot;${ACH_PAYMENTACCOUNT_ID}&quot;/&gt;&#xd;
+	&lt;RecurrenceType id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0YsNzkAYBxJF7cOQjFM6pxUlGpvpZpU!!!X7l&quot;/&gt;	&#xd;
+	&lt;FrequencyType id=&quot;${1AND15}&quot; /&gt;&#xd;
+	&lt;CreditCardPaymentAccount id=&quot;&quot;/&gt;&#xd;
+	&lt;FeeSchedule id=&quot;${FEE_SCHEDULE_ID}&quot;/&gt;&#xd;
+	&lt;PointOfEntry id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0Ys8z4UUkB6!!!SAwJXGr7p!!!HVal4uYO69Tkv&quot;/&gt;		&#xd;
+&lt;/PaymentSchedule&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/paymentschedule</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Payment Installment ACH Monthly" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;PaymentSchedule xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+	&lt;PaymentAmount&gt;${AMOUNT}&lt;/PaymentAmount&gt;&#xd;
+	&lt;OriginalAmount&gt;${TOTAL_AMOUNT}&lt;/OriginalAmount&gt;&#xd;
+	&lt;OriginalDueAmount&gt;200&lt;/OriginalDueAmount&gt;&#xd;
+	&lt;FeePerPayment&gt;1&lt;/FeePerPayment&gt;&#xd;
+	&lt;TaxAmountPerPayment&gt;2&lt;/TaxAmountPerPayment&gt;&#xd;
+	&lt;TotalPaymentsToPay&gt;3&lt;/TotalPaymentsToPay&gt;&#xd;
+	&lt;PaymentsPaid&gt;1&lt;/PaymentsPaid&gt;&#xd;
+	&lt;StartDate&gt;${NOW}&lt;/StartDate&gt;&#xd;
+	&lt;InvoiceNumber&gt;T5VC5&lt;/InvoiceNumber&gt;&#xd;
+	&lt;PoNumber&gt;MOY49&lt;/PoNumber&gt;&#xd;
+	&lt;CustomDataFields&gt;&lt;/CustomDataFields&gt;&#xd;
+	&lt;ReportNotes&gt;&lt;/ReportNotes&gt;&#xd;
+	&lt;EmailNotes&gt;&lt;/EmailNotes&gt;&#xd;
+	&lt;ExternalId&gt;Token1&lt;/ExternalId&gt;&#xd;
+	&lt;AchPaymentAccount id=&quot;${ACH_PAYMENTACCOUNT_ID}&quot;/&gt;&#xd;
+	&lt;RecurrenceType id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0YsNzkAYBxJF7cOQjFM6pxUlGpvpZpU!!!X7l&quot;/&gt;	&#xd;
+	&lt;FrequencyType id=&quot;${MONTHLY}&quot; /&gt;&#xd;
+	&lt;CreditCardPaymentAccount id=&quot;&quot;/&gt;&#xd;
+	&lt;FeeSchedule id=&quot;${FEE_SCHEDULE_ID}&quot;/&gt;&#xd;
+	&lt;PointOfEntry id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0Ys8z4UUkB6!!!SAwJXGr7p!!!HVal4uYO69Tkv&quot;/&gt;		&#xd;
+&lt;/PaymentSchedule&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/paymentschedule</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Payment Installment ACH Quarterly" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;PaymentSchedule xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+	&lt;PaymentAmount&gt;${AMOUNT}&lt;/PaymentAmount&gt;&#xd;
+	&lt;OriginalAmount&gt;${TOTAL_AMOUNT}&lt;/OriginalAmount&gt;&#xd;
+	&lt;OriginalDueAmount&gt;200&lt;/OriginalDueAmount&gt;&#xd;
+	&lt;FeePerPayment&gt;1&lt;/FeePerPayment&gt;&#xd;
+	&lt;TaxAmountPerPayment&gt;2&lt;/TaxAmountPerPayment&gt;&#xd;
+	&lt;TotalPaymentsToPay&gt;3&lt;/TotalPaymentsToPay&gt;&#xd;
+	&lt;PaymentsPaid&gt;1&lt;/PaymentsPaid&gt;&#xd;
+	&lt;StartDate&gt;${NOW}&lt;/StartDate&gt;&#xd;
+	&lt;InvoiceNumber&gt;T5VC5&lt;/InvoiceNumber&gt;&#xd;
+	&lt;PoNumber&gt;MOY49&lt;/PoNumber&gt;&#xd;
+	&lt;CustomDataFields&gt;&lt;/CustomDataFields&gt;&#xd;
+	&lt;ReportNotes&gt;&lt;/ReportNotes&gt;&#xd;
+	&lt;EmailNotes&gt;&lt;/EmailNotes&gt;&#xd;
+	&lt;ExternalId&gt;Token1&lt;/ExternalId&gt;&#xd;
+	&lt;AchPaymentAccount id=&quot;${ACH_PAYMENTACCOUNT_ID}&quot;/&gt;&#xd;
+	&lt;RecurrenceType id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0YsNzkAYBxJF7cOQjFM6pxUlGpvpZpU!!!X7l&quot;/&gt;	&#xd;
+	&lt;FrequencyType id=&quot;${QUARTERLY}&quot; /&gt;&#xd;
+	&lt;CreditCardPaymentAccount id=&quot;&quot;/&gt;&#xd;
+	&lt;FeeSchedule id=&quot;${FEE_SCHEDULE_ID}&quot;/&gt;&#xd;
+	&lt;PointOfEntry id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0Ys8z4UUkB6!!!SAwJXGr7p!!!HVal4uYO69Tkv&quot;/&gt;		&#xd;
+&lt;/PaymentSchedule&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/paymentschedule</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Payment Installment ACH Semi Annually" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;PaymentSchedule xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+	&lt;PaymentAmount&gt;${AMOUNT}&lt;/PaymentAmount&gt;&#xd;
+	&lt;OriginalAmount&gt;${TOTAL_AMOUNT}&lt;/OriginalAmount&gt;&#xd;
+	&lt;OriginalDueAmount&gt;200&lt;/OriginalDueAmount&gt;&#xd;
+	&lt;FeePerPayment&gt;1&lt;/FeePerPayment&gt;&#xd;
+	&lt;TaxAmountPerPayment&gt;2&lt;/TaxAmountPerPayment&gt;&#xd;
+	&lt;TotalPaymentsToPay&gt;3&lt;/TotalPaymentsToPay&gt;&#xd;
+	&lt;PaymentsPaid&gt;1&lt;/PaymentsPaid&gt;&#xd;
+	&lt;StartDate&gt;${NOW}&lt;/StartDate&gt;&#xd;
+	&lt;InvoiceNumber&gt;T5VC5&lt;/InvoiceNumber&gt;&#xd;
+	&lt;PoNumber&gt;MOY49&lt;/PoNumber&gt;&#xd;
+	&lt;CustomDataFields&gt;&lt;/CustomDataFields&gt;&#xd;
+	&lt;ReportNotes&gt;&lt;/ReportNotes&gt;&#xd;
+	&lt;EmailNotes&gt;&lt;/EmailNotes&gt;&#xd;
+	&lt;ExternalId&gt;Token1&lt;/ExternalId&gt;&#xd;
+	&lt;AchPaymentAccount id=&quot;${ACH_PAYMENTACCOUNT_ID}&quot;/&gt;&#xd;
+	&lt;RecurrenceType id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0YsNzkAYBxJF7cOQjFM6pxUlGpvpZpU!!!X7l&quot;/&gt;	&#xd;
+	&lt;FrequencyType id=&quot;${SEMIANNUALLY}&quot; /&gt;&#xd;
+	&lt;CreditCardPaymentAccount id=&quot;&quot;/&gt;&#xd;
+	&lt;FeeSchedule id=&quot;${FEE_SCHEDULE_ID}&quot;/&gt;&#xd;
+	&lt;PointOfEntry id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0Ys8z4UUkB6!!!SAwJXGr7p!!!HVal4uYO69Tkv&quot;/&gt;		&#xd;
+&lt;/PaymentSchedule&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/paymentschedule</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Payment Installment ACH Annually" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;PaymentSchedule xmlns=&quot;http://www.fundtech.com/t3applicationmedia-v1&quot;&gt;&#xd;
+	&lt;PaymentAmount&gt;${AMOUNT}&lt;/PaymentAmount&gt;&#xd;
+	&lt;OriginalAmount&gt;${TOTAL_AMOUNT}&lt;/OriginalAmount&gt;&#xd;
+	&lt;OriginalDueAmount&gt;200&lt;/OriginalDueAmount&gt;&#xd;
+	&lt;FeePerPayment&gt;1&lt;/FeePerPayment&gt;&#xd;
+	&lt;TaxAmountPerPayment&gt;2&lt;/TaxAmountPerPayment&gt;&#xd;
+	&lt;TotalPaymentsToPay&gt;3&lt;/TotalPaymentsToPay&gt;&#xd;
+	&lt;PaymentsPaid&gt;1&lt;/PaymentsPaid&gt;&#xd;
+	&lt;StartDate&gt;${NOW}&lt;/StartDate&gt;&#xd;
+	&lt;InvoiceNumber&gt;T5VC5&lt;/InvoiceNumber&gt;&#xd;
+	&lt;PoNumber&gt;MOY49&lt;/PoNumber&gt;&#xd;
+	&lt;CustomDataFields&gt;&lt;/CustomDataFields&gt;&#xd;
+	&lt;ReportNotes&gt;&lt;/ReportNotes&gt;&#xd;
+	&lt;EmailNotes&gt;&lt;/EmailNotes&gt;&#xd;
+	&lt;ExternalId&gt;Token1&lt;/ExternalId&gt;&#xd;
+	&lt;AchPaymentAccount id=&quot;${ACH_PAYMENTACCOUNT_ID}&quot;/&gt;&#xd;
+	&lt;RecurrenceType id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0YsNzkAYBxJF7cOQjFM6pxUlGpvpZpU!!!X7l&quot;/&gt;	&#xd;
+	&lt;FrequencyType id=&quot;${ANNUALLY}&quot; /&gt;&#xd;
+	&lt;CreditCardPaymentAccount id=&quot;&quot;/&gt;&#xd;
+	&lt;FeeSchedule id=&quot;${FEE_SCHEDULE_ID}&quot;/&gt;&#xd;
+	&lt;PointOfEntry id=&quot;P2EqpaxBJf3aIKcOBazAh!!!XTSthTC0Ys8z4UUkB6!!!SAwJXGr7p!!!HVal4uYO69Tkv&quot;/&gt;		&#xd;
+&lt;/PaymentSchedule&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/sbps/api/paymentschedule</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <objProp>
+          <name></name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <objProp>
+          <name></name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <objProp>
+          <name></name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <objProp>
+          <name></name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
